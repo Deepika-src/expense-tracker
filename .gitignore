@@ -3,4 +3,5 @@
 
 #  for files
 .env
+*.env
 
