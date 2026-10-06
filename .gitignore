@@ -1,0 +1,6 @@
+ # for folders
+ node_modules
+
+#  for files
+.env
+

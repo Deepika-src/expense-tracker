@@ -1,0 +1,371 @@
+/* ================================
+   NAVBAR - RESET PASSWORD THEME
+================================ */
+
+.navbar {
+    width: 100%;
+    min-height: 72px;
+    padding: 12px 5%;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    background: rgba(255, 255, 255, 0.96);
+    border-bottom: 1px solid #eee9f3;
+    box-shadow: 0 8px 30px rgba(80, 70, 120, 0.07);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* ================================
+   BRAND
+================================ */
+
+.navbar-brand {
+    color: #332b45;
+    text-decoration: none;
+
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+
+    white-space: nowrap;
+    transition: color 0.2s ease;
+}
+
+.navbar-brand:hover {
+    color: #a987cb;
+}
+
+/* ================================
+   RIGHT SIDE
+================================ */
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+/* ================================
+   SEARCH
+================================ */
+
+.navbar-search {
+    position: relative;
+}
+
+.navbar-search input {
+    width: 190px;
+    height: 40px;
+    padding: 0 14px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #ded7e8;
+    border-radius: 12px;
+
+    background: #ffffff;
+    color: #3b3348;
+
+    font-size: 14px;
+    outline: none;
+
+    transition: all 0.2s ease;
+}
+
+.navbar-search input::placeholder {
+    color: #aaa2b1;
+}
+
+.navbar-search input:focus {
+    border-color: #b99ad9;
+    box-shadow: 0 0 0 3px rgba(185, 154, 217, 0.15);
+}
+
+/* ================================
+   NAV LINKS
+================================ */
+
+.nav-action,
+.login-link,
+.register-link {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+
+    padding: 9px 14px;
+    border-radius: 10px;
+
+    transition: all 0.2s ease;
+}
+
+/* Dashboard */
+
+.nav-action {
+    color: #5d526c;
+    background: #f7f2fc;
+}
+
+.nav-action:hover {
+    color: #332b45;
+    background: #eee5f7;
+    transform: translateY(-1px);
+}
+
+/* Add Expense */
+
+.add-nav {
+    color: #ffffff;
+    background: #b99ad9;
+}
+
+.add-nav:hover {
+    background: #a987cb;
+    transform: translateY(-1px);
+}
+
+/* ================================
+   LOGIN
+================================ */
+
+.login-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 40px;
+    padding: 0 16px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #b99ad9;
+    color: #ffffff;
+
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+
+    box-sizing: border-box;
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.login-link:hover {
+    background: #a987cb;
+    color: #ffffff;
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px rgba(80, 70, 120, 0.12);
+}
+
+.login-link:active {
+    transform: translateY(0);
+}
+
+/* ================================
+   REGISTER
+================================ */
+
+.register-link {
+    color: #ffffff;
+    background: #b99ad9;
+}
+
+.register-link:hover {
+    background: #a987cb;
+    transform: translateY(-1px);
+}
+
+/* ================================
+   WELCOME TEXT
+================================ */
+
+.welcome-text {
+    color: #81798f;
+    font-size: 14px;
+    font-weight: 500;
+
+    white-space: nowrap;
+}
+
+/* ================================
+   PROFILE ICON
+================================ */
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #ded7e8;
+    border-radius: 50%;
+
+    background: #f0e6f8;
+    color: #72558e;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.profile-icon:hover {
+    background: #e5d5f2;
+    border-color: #b99ad9;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 15px rgba(80, 70, 120, 0.10);
+}
+
+/* ================================
+   LOGOUT
+================================ */
+
+.logout-btn {
+    border: none;
+    border-radius: 10px;
+
+    padding: 9px 14px;
+
+    background: #f7f2fc;
+    color: #6e5d7e;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.logout-btn:hover {
+    background: #eee5f7;
+    color: #332b45;
+}
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 1000px) {
+    .navbar {
+        padding: 12px 3%;
+    }
+
+    .navbar-right {
+        gap: 8px;
+    }
+
+    .navbar-search input {
+        width: 160px;
+    }
+
+    .welcome-text {
+        display: none;
+    }
+}
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 760px) {
+    .navbar {
+        min-height: auto;
+        padding: 12px 16px;
+
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .navbar-brand {
+        font-size: 19px;
+    }
+
+    .navbar-right {
+        width: 100%;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        gap: 8px;
+    }
+
+    .navbar-search {
+        flex: 1;
+        min-width: 150px;
+    }
+
+    .navbar-search input {
+        width: 100%;
+    }
+
+    .nav-action,
+    .login-link,
+    .register-link,
+    .logout-btn {
+        padding: 8px 11px;
+        font-size: 13px;
+    }
+
+    .profile-icon {
+        width: 38px;
+        height: 38px;
+    }
+}
+
+/* ================================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px 12px;
+    }
+
+    .navbar-brand {
+        width: 100%;
+        text-align: center;
+        font-size: 19px;
+    }
+
+    .navbar-right {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .navbar-search {
+        width: 100%;
+        flex-basis: 100%;
+    }
+
+    .navbar-search input {
+        height: 40px;
+    }
+
+    .nav-action,
+    .login-link,
+    .register-link,
+    .logout-btn {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+
+    .profile-icon {
+        width: 36px;
+        height: 36px;
+    }
+}
